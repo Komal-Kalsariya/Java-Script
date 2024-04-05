@@ -1,0 +1,21 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+img{
+    width: 200px;
+    height:200px
+}
+#box{
+display:flex;
+flex-wrap: wrap;
+
+}
+.box1{
+    width: 25%;
+    padding: 15px;
+    background-color: pink;
+    margin: 10px;
+    margin: auto
+}

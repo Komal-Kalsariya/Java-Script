@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+         img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form id="datas">
+        <input type="text" id="title" placeholder="enetr product title">
+        <input type="number" id="price" placeholder="enetr product price">
+        <input type="url" id="img" placeholder="enter images URL">
+        <input type="submit" value="ADD">
+    </form>
+    <div id="box">
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

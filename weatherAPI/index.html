@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatherAPI</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Parisienne:400,400i,700");
+
+:root {
+  --blue: #19283F;
+}
+
+body {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  font-family: Roboto;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+h1 {
+  color: var(--blue);
+  font-family: Parisienne, Roboto;
+  font-size: 80px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container__inner {
+  display: flex;
+}
+
+.title__container {
+  align-items: center;
+  display: flex;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weatherIcon {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  margin-right: 15px;
+  width: 36px;
+}
+
+.partialy-cloudy .weatherIcon {
+  color: #F97F29;
+}
+
+.rainy .weatherIcon {
+  color: #2983FE;
+}
+
+.weatherCard {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 30px;
+}
+
+.partialy-cloudy {
+  background: url('https://images.unsplash.com/photo-1566437036079-0e00cc9ea796?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjAwNjA4NDI&ixlib=rb-1.2.1&q=80');
+  background-size: cover;
+  color: var(--blue);
+}
+
+.rainy {
+  background: url('https://images.unsplash.com/photo-1534261271554-002a32561480?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjAwODA3NDg&ixlib=rb-1.2.1&q=80');
+  background-size: cover;
+  color: #fff;
+}
+
+.info__container {
+  display: flex;  
+}
+
+.info {
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  width: 110px;
+}
+
+.info__title {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.info__value {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.temperature {
+  align-items: center;
+  display: flex;
+  margin: 5px 0;
+}
+
+.temperature__max {
+  font-size: 48px;
+}
+
+.temperature__min {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #000;
+  display: inline-flex;
+  font-size: 12px;
+  margin-left: 15px;
+  padding: 0 8px;
+  height: 24px;
+}
+
+.pressure {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.visibility {
+  background-color: #CCE16A;
+  color: #000;
+  margin: 0 15px;
+}
+
+.rain {
+  background-color: #fff;
+  color: #000;
+}
+
+.forecast, .city {
+  font-size: 14px;
+}
+.c-weather__action {
+    .c-weather__action-button {
+      width: 50%;
+      height: 40px;
+      padding: calc(var(--spacing-base) * 5) calc(var(--spacing-base) * 3);
+      outline: 0;
+      border: 0;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      padding: 12px;
+    margin: auto;
+    margin-top: 20px;
+      color: var(--color-light);
+      background-image: rgba(255, 255, 255, 0.925);
+      font-size: 16px;
+      font-weight: 700;
+      opacity: 0.7;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: var(--transition);
+      
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+    </style>
+</head>
+<body>
+    <!-- <form id="form">
+        <input type="text" id="search" placeholder="enetr city">
+        <input type="submit" value="ShowData">
+    </form>  -->
+    <div id="box">
+        
+       
+    </div>
+</body>
+<script src="/weatherAPI/index.js"></script>
+</html>

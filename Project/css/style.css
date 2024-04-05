@@ -1,0 +1,86 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body nav{
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+
+}
+
+#box{
+    display: flex;
+    flex-wrap: wrap;
+}
+#box{
+    display: flex;
+    flex-wrap: wrap; 
+   } 
+  .box1{
+      width: 25%;
+      margin: 30px; 
+      padding: 15px; 
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+      text-align: center;
+      background-color: rgb(240, 237, 237);
+
+  }
+  
+ 
+  #box img{
+      width: 250px;
+      height: 250px;
+     
+  }
+  #box img:hover{
+      transform: scale(1.1);
+      transition: all 0.5s;
+  }
+  .imag{
+    display: block;
+    margin: auto;
+  }
+  .price{
+    display: inline-block; 
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  #data{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  #data input{
+    width: 400px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid rgb(224, 219, 219);
+    border-radius: 10px;
+    color: rgb(147, 150, 152);
+  }
+  .signup{
+    padding: 15px;
+    border-radius: 10px;
+    margin:20px
+  }
+  .category{
+    width: 400px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(224, 219, 219);
+    color: rgb(147, 150, 152);
+  }
+  .logo{
+    width: 90px;
+    border-radius: 50%;
+  }
