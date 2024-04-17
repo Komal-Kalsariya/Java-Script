@@ -14,12 +14,12 @@ const postdata = (data) => {
 const Deletedata=(id)=>{
     fetch(`http://localhost:3000/student/${id}`, {
         method: "DELETE",
-        headers: { "Content-Type": "Application/json" },
-        body: JSON.stringify(data)
-    })
-        .then((res) => res.json())
-        .then((id) => {
-            display(id)
+    //     headers: { "Content-Type": "Application/json" },
+    //     body: JSON.stringify(data)
+    // })
+    //     .then((res) => res.json())
+    //     .then((id) => {
+    //         display(id)
         })
 }
 const upadate=(data,id)=>{
@@ -112,6 +112,10 @@ const student = (e) => {
         Maths:document.getElementById("Maths").value,
         gujarati:document.getElementById("gujarati").value
     }
+    // if(data.hindi.length<0){
+    //     alert("please enter more then 0")
+    //     return
+    // }
     if(id!=-1){
         upadate(data,id)
         alert("update sucessful....")
