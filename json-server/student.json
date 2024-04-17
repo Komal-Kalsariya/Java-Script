@@ -1,0 +1,40 @@
+{
+  "student": [
+    {
+      "id": "7994",
+      "name": "phone",
+      "rollno": "5",
+      "hindi": "67",
+      "English": "89",
+      "Maths": "45",
+      "gujarati": "55"
+    },
+    {
+      "id": "c95f",
+      "name": "phone",
+      "rollno": "4",
+      "hindi": "56",
+      "English": "45",
+      "Maths": "77",
+      "gujarati": "66"
+    },
+    {
+      "id": "d317",
+      "name": "hirva",
+      "rollno": "6",
+      "hindi": "56",
+      "English": "78",
+      "Maths": "45",
+      "gujarati": "69"
+    },
+    {
+      "id": "86b2",
+      "name": "komal",
+      "rollno": "34",
+      "hindi": "67",
+      "English": "78",
+      "Maths": "78",
+      "gujarati": "0"
+    }
+  ]
+}
