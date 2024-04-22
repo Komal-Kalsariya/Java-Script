@@ -1,23 +1,18 @@
+import postData from "../API/post.js";
 import navBar from "../components/navbar.js";
 
-document.getElementById("box").innerHTML=navBar()
+document.getElementById("navbar").innerHTML=navBar()
 
-const postData=(data)=>{
-    fetch("http://localhost:3000/user",{
-        method:"POST",
-        headers:{"content-type":"application/json"},
-        body:JSON.stringify(data)
-    })
-}
-const isExit=(email)=>{
-    fetch(`http://localhost:3000/user?email=${email}`)
+const isExit=(data)=>{
+    fetch(`http://localhost:3000/user?email=${data.email}`)
     .then((res)=>res.json())
-    .then((data)=>{
-        if(data.length==0){
-            return true
+    .then((res)=>{
+        if(res.length==0){
+            postData("http://localhost:3000/user",data)
+            // console.log(data)
         }
         else{
-            return false
+            alert("Already exit....")
         }
     })
 }
@@ -30,11 +25,7 @@ const signUp=(e)=>{
         email:document.getElementById("email").value,
         password:document.getElementById("password").value
     }
-    if(isExit(data.email)==true){
-        postData(data)
-    }
-    else{
-        alert("user email already exits....")
-    }
+    console.log(data);
+ isExit(data)
 }
 document.getElementById("data").addEventListener("submit",signUp)

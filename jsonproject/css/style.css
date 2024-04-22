@@ -1,0 +1,24 @@
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box1{
+    width: 20%;
+    
+    /* background-color: aliceblue; */
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    /* border: 1px solid gainsboro; */
+    border-radius: 10px;
+}
+img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
