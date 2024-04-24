@@ -55,6 +55,13 @@
       "img": "https://avatars.mds.yandex.net/i?id=2a1f5ed0185f13a10a82f3fffb027425b56b9288-12571073-images-thumbs&n=13",
       "price": "34567",
       "Category": "male"
+    },
+    {
+      "id": "f201",
+      "title": "mobile",
+      "img": "https://avatars.mds.yandex.net/i?id=2a1f5ed0185f13a10a82f3fffb027425b56b9288-12571073-images-thumbs&n=13",
+      "price": "4567",
+      "Category": "female"
     }
   ],
   "cart": [
@@ -64,21 +71,13 @@
       "img": "https://assets.ajio.com/medias/sys_master/root/20230624/GVP5/649707d3a9b42d15c9f06737/-473Wx593H-465517910-purple-MODEL.jpg",
       "price": "5678",
       "Category": "male",
-      "qnt": 2
+      "qnt": 3
     },
     {
-      "id": "f11e",
-      "title": "phome",
-      "img": "https://www.google.co.in/url?q=http://www.flipkart.com/redmi-pad-6-gb-ram-128-rom-10-61-inch-wi-fi-only-tablet-moonlight-silver/p/itma80999601a45c%3Fpid%3DTABGG9WFZ2H7AGVW%26lid%3DLSTTABGG9WFZ2H7AGVW7I5TA9%26marketplace%3DFLIPKART%26cmpid%3Dcontent_tablet_8965229628_gmc&opi=95576897&sa=U&ved=0ahUKEwihqYHrgoiFAxWpQ_UHHfL_AFgQrzwI6gE&usg=AOvVaw0rlKSXH8LPZAUhDEG_cjWs",
-      "price": "657",
-      "Category": "child",
-      "qnt": 1
-    },
-    {
-      "id": "b614",
-      "title": "mobile",
-      "img": "https://i.pinimg.com/originals/54/2f/64/542f64bfd04e5dd955af30952ce0d546.png",
-      "price": "45566",
+      "id": "3e0b",
+      "title": "dress",
+      "img": "https://assets.ajio.com/medias/sys_master/root/20231225/t173/6589b87aafa4cf41f5ea21e1/-473Wx593H-466913619-cream-MODEL.jpg",
+      "price": "6000",
       "Category": "female",
       "qnt": 1
     }

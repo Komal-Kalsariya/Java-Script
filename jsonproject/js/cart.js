@@ -1,8 +1,26 @@
+import DeleteData from "../API/delete.js";
 import getData from "../API/get.js";
+import upadateData from "../API/patch.js";
 //import display from "../components/UiMaker.js";
 import navBar from "../components/navbar.js";
-
 document.getElementById("navbar").innerHTML=navBar()
+
+
+const handleqntity=(opr,data)=>{
+    if(opr=="+"){
+        data.qnt+=1
+        upadateData(data)
+    }
+    else{
+        if(data.qnt>=2){
+         data.qnt-=1
+        upadateData(data)
+        }
+     else{
+        DeleteData(data.id)
+    }
+}
+}
 
 const display = (data,id) => {
     
@@ -15,30 +33,38 @@ const display = (data,id) => {
         title.innerHTML = ele.title
         let img = document.createElement("img")
         img.src = ele.img
+        let td1=document.createElement("td")
+        td1.append(img)
         let price = document.createElement("td")
         price.innerHTML = ele.price
 
         let Category = document.createElement("td")
         Category.innerHTML =ele.Category
 
-        let td=document.createElement("td")
-        td.innerHTML=ele.qnt
-        let btn=document.createElement("button")
-        btn.innerHTML="BUY"
-        btn.addEventListener("click",()=>{
-           // postData("http://localhost:3000/cart",ele)
-           isExitCart({...ele,qnt:1})
-        })
-        let btn1=document.createElement("button")
+      
+        let btn1=document.createElement("td")
         btn1.innerHTML="DELETE"
+        
+        btn1.addEventListener("click",()=>{
+            DeleteData(ele.id)
+        })
+        let btn2=document.createElement("button")
+        btn2.innerHTML="-"
+      
+        let td=document.createElement("button")
+        td.innerHTML=ele.qnt
+        let btn3=document.createElement("button")
+        btn3.innerHTML="+"
+
+        btn2.addEventListener("click",()=>handleqntity("-",ele))
+        btn3.addEventListener("click",()=>handleqntity("+",ele))
+        let td2=document.createElement("td")
+        td2.append(btn2,td,btn3)
+       
         let tr = document.createElement("tr")
-        tr.append(th,img,title, price, Category,td)
-        // div.setAttribute("class", "box1")
-        // title.setAttribute("class", "title")
+        tr.append(th,td1,title, price, Category,td2,btn1)
+      
         img.setAttribute("class", "imag")
-        // price.setAttribute("class", "price")
-        // btn.setAttribute("class", "btn  btn-warning")
-        //  btn1.setAttribute("class", "btn btn-info ms-2")
         document.getElementById(id).append(tr)
 
 

@@ -1,7 +1,7 @@
 const navBar=()=>{
-    return ` <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    return ` <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-    <img src="/jsonproject/images/h2logo.jpg" alt="">
+    <img src="/jsonproject/images/h2.jpg" class="logo" alt="">
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -21,14 +21,14 @@ const navBar=()=>{
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <i class="fa-solid fa-magnifying-glass"></i>
         </form>
     <a href="/jsonproject/pages/login.html">
-      <button class="btn btn-outline-success" type="submit">login</button>
+    <i class="fa-regular fa-user"></i>  
       
     </a> 
     <a href="/jsonproject/pages/signup.html">
-      <button class="btn btn-outline-success" type="submit">Signup</button>
+    <i class="fa-solid fa-user-plus"></i>
       
     </a> 
       </div>

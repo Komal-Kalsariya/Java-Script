@@ -1,3 +1,4 @@
+ 
  .imag1{
     width: 200px;
     height: 200px;
@@ -27,6 +28,37 @@
     height: 100px;
 }
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    border-radius: 50%;
+}
+.navbar ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a i{
+    margin-left: 10px;
+}
+.navbar form input{
+    position: relative;
+}
+.navbar form i{
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    color: rgb(172, 175, 177);
+}
+.fa-user{
+    
+    font-size: 25px;
+    color:rgb(100, 98, 98);
+    
+}
+.fa-user-plus{
+    
+    font-size: 25px;
+    color:rgb(100, 98, 98);
+}
+.navbar{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
