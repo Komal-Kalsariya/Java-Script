@@ -21,12 +21,12 @@ const handleqntity=(opr,data)=>{
     }
 }
 }
-
+let total=0
 const display = (data,id) => {
     
     document.getElementById(id).innerHTML = ""
     data.map((ele,index) => {
-
+        total+=ele.price*ele.qnt
         let th=document.createElement("td")
         th.innerHTML=index+1
         let title = document.createElement("td")
@@ -44,7 +44,8 @@ const display = (data,id) => {
       
         let btn1=document.createElement("td")
         btn1.innerHTML="DELETE"
-        
+        // let td3=document.createElement("td")
+        // td3.append(bnt1)
         btn1.addEventListener("click",()=>{
             DeleteData(ele.id)
         })
@@ -70,7 +71,11 @@ const display = (data,id) => {
 
 
     })
-
+    let btn1=document.createElement("button")
+    btn1.innerHTML="checkout"
+    let p=document.createElement("p")
+    p.innerHTML=total
+document.getElementById("checkout").append(p,btn1)
     
 
 }
